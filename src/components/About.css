@@ -1,0 +1,32 @@
+.About {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .About h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .About .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .About .job {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .About p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .About strong {
+    color: #333;
+  }
+  

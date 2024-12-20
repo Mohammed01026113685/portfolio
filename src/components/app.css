@@ -1,0 +1,208 @@
+/* Add this to your CSS file (App.css) */
+@keyframes handMove {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(-5px);
+    }
+  }
+  /* تخصيص السكرول للصفحة */
+html, body {
+  height: 100%;
+  overflow: auto; /* السماح بالتمرير عمودي */
+  margin: 0;
+  padding: 0;
+}
+
+/* تخصيص شكل السكرول */
+::-webkit-scrollbar {
+  width: 10px; /* عرض السكرول */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #32cd32; /* اللون الأخضر للـ thumb */
+  border-radius: 10px; /* جعل الزوايا دائرية */
+  transition: background-color 0.3s ease; /* تأثير عند المرور بالماوس */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #28a745; /* تغيير اللون عند المرور بالماوس */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* خلفية للـ track */
+  border-radius: 10px; /* جعل الزوايا دائرية */
+}
+
+#root {
+  min-height: 100vh; /* تأكد من أن الـ root يغطي كامل الشاشة */
+  padding-bottom: 20px; /* إضافة مساحة للسكرول السفلي */
+}
+
+  
+  .animate-handMove {
+    animation: handMove 1s ease-in-out infinite;
+  }
+  .hand{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction:row ;
+    margin-bottom: 20px;
+    text-align: start;
+  }  
+  .imgre{
+    height: 600px;
+    width: 400px;
+  }
+  svg{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+/* إعدادات الـ Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    position: fixed; /* لجعلها ثابتة */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* ظل خفيف */
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #32cd32;
+  }
+  
+  /* قائمة الـ Navbar للشاشات الصغيرة */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links.hidden {
+    display: none;
+  }
+  
+  /* زر القائمة الجانبية (Hamburger Menu) */
+  .hamburger {
+    display: none; /* إخفاء الزر في الشاشات الكبيرة */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  nav.open .nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav.open .hamburger {
+    color: #32cd32;
+  }
+
+  
+  /* وسائل الإعلام لجعل القائمة متجاوبة */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  .section-home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 20px;
+    min-height: 90vh;
+    text-align: start;
+
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color:#32cd32;
+  }
+  
+  /* تنسيق الأزرار */
+  button, .btn {
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #28a745;
+  }
+  /* وسائل الإعلام لجعل القائمة متجاوبة */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+  
+  /* تعديل التنسيق لشاشات صغيرة */
+  .section-home {
+      flex-direction: column;
+      padding: 10px;
+      text-align: center;  /* محاذاة المحتوى في المنتصف */
+  }
+
+  .imgre {
+      display: none;
+  }
+
+  .hand {
+      align-items: center;
+  }
+
+  svg {
+      height: 24px;
+      width: 24px;
+  }
+
+  .skills {
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 20px;
+  }
+}

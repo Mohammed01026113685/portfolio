@@ -1,0 +1,33 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  background-color: #1a1a1a; /* اللون الداكن */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 12px 25px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.header nav a:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+}

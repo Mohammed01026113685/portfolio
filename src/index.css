@@ -1,0 +1,182 @@
+/* الصفحة الرئيسية */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* خلفية سوداء */
+    color: #fff; /* نصوص بيضاء */
+    scroll-behavior: smooth; /* تمكين التمرير السلس */
+  }
+
+
+
+/* تأكد من أن الجسم يغطى الصفحة بالكامل */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #000; /* اختر اللون الذي تفضله */
+  }
+  
+  /* تخصيص الأيقونات لتتحرك */
+  .icon-move {
+    position: absolute;
+    top: 50%; /* تحديد الموقع الرأسي للأيقونة */
+    transform: translateY(-50%);
+    animation: moveIcons 5s linear infinite;
+    font-size: 2rem; /* حجم الأيقونة */
+    color: #fff; /* لون الأيقونة */
+    z-index: 1; /* تأكد من ظهور الأيقونة فوق الخلفية */
+  }
+  
+  /* حركة الأيقونات من اليمين لليسار */
+  @keyframes moveIcons {
+    0% {
+      left: 100%; /* بداية الحركة من خارج الشاشة على اليمين */
+    }
+    50% {
+      left: 50%; /* وسط الشاشة */
+    }
+    100% {
+      left: -100%; /* نهاية الحركة من خارج الشاشة على اليسار */
+    }
+  }
+  
+
+
+  
+  /* العناوين والنصوص */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #32cd32; /* لون أخضر */
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #32cd32; /* لون أخضر */
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* الأزرار */
+  button {
+    background-color: #32cd32;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #28a745; /* لون أخضر أغمق */
+  }
+  
+  /* الرموز الاجتماعية */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #32cd32; /* لون أخضر */
+  }
+  
+  /* التخطيطات */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* الأقسام (Sections) */
+  .section {
+    padding: 50px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .section.home {
+    background-color: #121212;
+  }
+  
+  .section.about {
+    background-color: #1e1e1e;
+  }
+  
+  .section.project {
+    background-color: #282828;
+  }
+  
+  .section.contact {
+    background-color: #323232;
+  }
+  
+  /* قائمة التنقل */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-size: 1.2rem;
+  }
+  
+  nav a:hover {
+    color: #32cd32; /* لون أخضر */
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #32cd32;
+  }
+  
+  nav button {
+    background-color: #32cd32;
+    padding: 10px 15px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #28a745;
+  }
+  
