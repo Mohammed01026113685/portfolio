@@ -15,14 +15,13 @@ const About = () => {
             </Fade>
             <Fade direction="left" delay={100} triggerOnce>
               <p className="lead mb-4">
-                Hello! I'm Mohammed Hashim, a passionate Front End Developer with a strong focus on creating dynamic, user-friendly, and visually stunning websites. I specialize in HTML, CSS, JavaScript, and React, constantly exploring new technologies to improve my skills and build innovative solutions.
-              </p>
-            </Fade>
-            <Slide direction="up" delay={200} triggerOnce>
-              <p className="lead mb-4">
-                I'm dedicated to making the web a better place through code and design, and I'm always open to new challenges and opportunities to grow.
-              </p>
-            </Slide>
+              I am a creative and detail-oriented front-end developer with experience
+building responsive websites and web applications. I have a strong
+understanding of HTML, CSS, and JavaScript, as well as experience working
+with front-end frameworks such as React I am passionate about using my
+technical skills to create visually appealing and user-friendly interfaces that
+meet the needs of clients and end-users.</p>
+            </Fade> 
           </div>
         </div>
 

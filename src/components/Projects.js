@@ -53,10 +53,10 @@ const projects = [
   },
   {
     id: 6,
-    name: "web dsign",
-    description: "This is a web design project.",
-    tech: "Html Css ",
-    demoLink: "https://example.com/project6",
+    name: "Ecommerce App",
+    description: "This is a React  project . ",
+    tech: "react js , firebase",
+    demoLink: "https://ecommerce-app-8ef3c.web.app/",
     image: projectSixImage
   },
 ];
